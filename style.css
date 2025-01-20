@@ -1,0 +1,267 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* This is for font */
+body {
+    font-family: 'Roboto', sans-serif;  /* This will apply the Roboto font to the body text */
+    font-size: 13px;
+}
+
+h1{
+    font-family: 'Roboto', sans-serif;  /* This will apply PT Serif font to headers */
+    font-size: 20px;
+}
+
+h2{
+    font-family: 'Roboto', sans-serif;  /* This will apply PT Serif font to headers */
+    font-size: 20px;
+}
+
+h3{
+    font-family: 'Roboto', sans-serif;  /* This will apply PT Serif font to headers */
+    font-size: 20px;
+}
+/* Upper code is for font */
+
+
+
+/* Header Styles */
+.main-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(173, 236, 231, 0.95);
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(5, 121, 111, 0.425);
+    z-index: 1000;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Ensure equal spacing between the logo image and text */
+}
+
+.logo img {
+    height: 40px;
+    width: auto;
+}
+
+.logo-link, .logo-text {
+    text-decoration: none; /* Removes underline from <a> */
+    font-family: 'PT Serif', serif;
+    font-size: 35px;
+    color: #05888d;
+    position: static;
+    margin: 0;
+    display: flex; /* Ensures consistent alignment */
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    gap: 0px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #024d50;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    padding: 8px 15px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+    background: #b5dadb;
+    color: #05888d;
+}
+
+
+
+
+/* This is for background */
+.hero{
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(rgba(253, 255, 255, 0.925), rgba(14, 170, 170, 0.4)), url(images/login_background.jpg);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    z-index: -1;
+}
+/* Upper code is for background */
+
+
+
+/* This is for form-box */
+
+.form-box{
+    width: 480px;
+    height: 480px;
+    position: relative;
+    margin: 15% auto;
+    background: #b5dadb;
+    box-shadow: 0 4px 8px rgba(72, 107, 107, 0.432);
+    padding: 5px
+}
+
+
+
+/* This is for button-box */
+.button-box{
+    width: 220px;
+    margin: 35px auto;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(1, 39, 39, 0.432);
+    border-radius: 30px;
+}
+
+/* Upper code is for button-box */
+
+
+
+/* This is for toggle button */
+.toggle-btn{
+    padding: 10px 30px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+    
+}
+
+#btn{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 220px;
+    height: 100%;
+    background: linear-gradient(to right, #dbe2e2, #b5dadb);
+    border-radius: 30px;
+    transition: .5s;
+}
+/* Upper code is for toggle button */
+
+
+
+
+/* This is for input */
+
+.input-group {
+    top: 180px;
+    position: absolute;
+    left: 50%; /* Centers horizontally */
+    transform: translateX(-50%); /* Shifts the element back by half of its own width */
+    width: 280px;
+    transition: 0.5s;
+}
+
+.input-field{
+    width: 100%;
+    padding: 10px 0;
+    margin: 5px 0;
+    background: #acdbdd;
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    border-bottom: 1px solid #79bec0;
+    outline: none;
+    background: transparent;
+    box-sizing: border-box;
+}
+
+.check-box{
+    margin: 30px 10px 30px 0;
+}
+
+span{
+    color: #777;
+    font-size: 12px;
+    bottom: 68px;
+    position: absolute;
+    margin-left: 5px;
+}
+.submit-btn{
+    width: 85%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: 20px auto;
+    background: linear-gradient(to right, #74bdbd, #337b7e);
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+}
+
+/* Upper code is for input portion */
+
+
+
+/* This is for dashboard menu */
+.dashboard-menu {
+    width: 100%;
+    margin: 120% auto;
+    padding: 10px;
+    display: flex;              /* Changed to flex display */
+    justify-content: center;    /* Center the cards */
+    gap: 1.5rem;                 /* Space between cards */
+    flex-wrap: nowrap;         /* Keep cards in single line */
+}
+
+.menu_list {
+    background: #b5dadb;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.432);
+    transition: transform 0.3s ease;
+    width: 250px;
+    flex-shrink: 0;  /* Keep cards in single line */
+}
+
+.menu_list:hover {
+    transform: translateY(-15px);
+}
+
+.menu_list h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+/* Upper code is for dashboard menu */
+
+
+
+
+/* This is for footer */
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #05888d;
+    color: rgb(151, 211, 203);
+    text-align: center;
+}
+/* Upper code is for footer */
+
+
+
+/* This is login module */
+#login{
+    left: 50px;
+}
+
+#signup{
+    left: 450px;
+}
