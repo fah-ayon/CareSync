@@ -105,11 +105,6 @@ section {
 
 
 
-
-
-
-
-
 .nav-links {
     display: flex;
     gap: 0px;
@@ -133,6 +128,7 @@ section {
 
 .values {
     text-align: center;        /* Centers all text content */
+    font-family: 'Georgia', 'Times New Roman', Times, 'serif';
     margin: 10px auto;         /* Centers the sections horizontally and adds vertical spacing */
     max-width: 800px;          /* Optional: limits section width */
     padding: 30px;
@@ -143,6 +139,7 @@ section {
 
 .values h1 {
     margin-bottom:0px;
+    font-family: 'Georgia', 'Times New Roman', Times, 'serif';
     color: #05888d;            /* Matches your color scheme */
 }
 
@@ -150,21 +147,25 @@ section {
 
 .values h2 {
     margin-bottom: 10px;
+    font-family: 'Georgia', 'Times New Roman', Times, 'serif';
     color: #05888d;            /* Matches your color scheme */
 }
 
 .values p {
     line-height: 1.6;
+    font-family: 'Georgia', 'Times New Roman', Times, 'serif';
     margin-bottom: 15px;
 }
 
 .values ul {
-    list-style: none;          /* Removes default bullet points */
+    list-style: none;
+    font-family: 'Georgia', 'Times New Roman', Times, 'serif';          /* Removes default bullet points */
     padding: 0;                /* Removes default padding */
 }
 
 .values li {
     margin: 10px 0;
+    font-family: 'Georgia', 'Times New Roman', Times, 'serif';
     font-size: 1.1em;
     color: #031414;
 }

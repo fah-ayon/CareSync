@@ -1,0 +1,200 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* This is for font */
+body {
+    font-family: 'Roboto', sans-serif;  /* This will apply the Roboto font to the body text */
+    font-size: 13px;
+    padding-top: 80px;
+
+}
+
+h1{
+    font-family: 'Roboto', sans-serif;  /* This will apply PT Serif font to headers */
+    font-size: 20px;
+}
+
+h2{
+    font-family: 'Roboto', sans-serif;  /* This will apply PT Serif font to headers */
+    font-size: 20px;
+}
+
+h3{
+    font-family: 'Roboto', sans-serif;  /* This will apply PT Serif font to headers */
+    font-size: 20px;
+}
+/* Upper code is for font */
+
+
+.hero{
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(rgba(253, 255, 255, 0.925), rgba(14, 170, 170, 0.4)), url(../images/login_background.jpg);
+    background-position: center;
+    background-size: cover;
+    position: fixed;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    z-index: -1;
+}
+
+
+main {
+    max-width: 1200px;        /* Maximum width of the content area */
+    margin: 0 auto;           /* Centers the content horizontally (0 top/bottom, auto left/right) */
+    padding: 20px;            /* Creates space inside the main container */
+    position: relative;       /* Helps with layering content above the background */
+}
+
+section {
+    background: #b5dadb; /* Make sections slightly transparent */
+    margin: 20px 0;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 29, 25, 0.74);
+}
+
+
+
+
+
+
+
+
+/* Header Styles */
+.main-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(173, 236, 231, 0.95);
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(5, 121, 111, 0.425);
+    z-index: 1000;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Ensure equal spacing between the logo image and text */
+}
+
+.logo img {
+    height: 40px;
+    width: auto;
+}
+
+.logo-link, .logo-text {
+    text-decoration: none; /* Removes underline from <a> */
+    font-family: 'PT Serif', serif;
+    font-size: 35px;
+    color: #05888d;
+    position: static;
+    margin: 0;
+    display: flex; /* Ensures consistent alignment */
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+.nav-links {
+    display: flex;
+    gap: 0px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #024d50;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    padding: 8px 15px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+    background: #b5dadb;
+    color: #05888d;
+}
+
+
+
+.heading {
+    text-align: center;        /* Centers all text content */
+    margin: 10px auto;         /* Centers the sections horizontally and adds vertical spacing */
+    max-width: 800px;          /* Optional: limits section width */
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.heading h1 {
+    margin-bottom:0px;
+    color: #05888d;            /* Matches your color scheme */
+}
+
+.values {
+    text-align: center; /* Center all text content */
+    font-family: 'Georgia', 'Times New Roman', Times, 'serif';        /* Centers all text content */
+    margin: 10px auto;         /* Centers the sections horizontally and adds vertical spacing */
+    max-width: 800px;          /* Optional: limits section width */
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.values p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.values .icon {
+    width: 20px; /* Adjust icon size */
+    height: auto;
+    margin-right: 10px; /* Space between icon and text */
+    vertical-align: middle; /* Align icon with text */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* This is for footer */
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #044244;
+    color: rgb(151, 211, 203);
+    text-align: center;
+}
+/* Upper code is for footer */
