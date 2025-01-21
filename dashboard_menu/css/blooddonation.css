@@ -13,7 +13,7 @@ body {
 }
 
 h1, h2, h3 {
-    font-family: "Roboto", serif;
+    font-family: "Roboto", serif; 
     font-size: 20px;
 }
 
@@ -23,31 +23,13 @@ h1, h2, h3 {
 .hero{
     height: 100%;
     width: 100%;
-    background-image: linear-gradient(rgba(253, 255, 255, 0.925), rgba(14, 170, 170, 0.4)), url(../images/login_background.jpg);
+    background-image: linear-gradient(rgba(253, 255, 255, 0.925), rgba(14, 170, 170, 0.4)), url(/images/login_background.jpg);
     background-position: center;
     background-size: cover;
     position: fixed;
     background-repeat: no-repeat;
     background-attachment: fixed;
     z-index: -1;
-}
-
-
-
-
-main {
-    max-width: 1200px;        /* Maximum width of the content area */
-    margin: 0 auto;           /* Centers the content horizontally (0 top/bottom, auto left/right) */
-    padding: 20px;            /* Creates space inside the main container */
-    position: relative;       /* Helps with layering content above the background */
-}
-
-section {
-    background: #b5dadb; /* Make sections slightly transparent */
-    margin: 20px 0;
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 29, 25, 0.74);
 }
 
 
@@ -117,9 +99,22 @@ section {
 }
 
 
-.values {
-    text-align: center;        /* Centers all text content */
-    font-family: 'Georgia', 'Times New Roman', Times, 'serif';
+
+
+
+
+
+
+
+
+
+
+
+
+.heading {
+
+    text-align: center;
+    font-weight: bolder ;        /* Centers all text content */
     margin: 10px auto;         /* Centers the sections horizontally and adds vertical spacing */
     max-width: 800px;          /* Optional: limits section width */
     padding: 30px;
@@ -128,38 +123,62 @@ section {
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-.values h1 {
+.heading h1 {
+    font-size: x-large;
     margin-bottom:0px;
+    color: #013335;
+                /* Matches your color scheme */
+}
+
+.donor,.recipient {
+    text-align: center;
+    font-weight: bolder ;        /* Centers all text content */
+    margin: 50px auto;         /* Centers the sections horizontally and adds vertical spacing */
+    max-width: 800px;          /* Optional: limits section width */
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    font-size: large;
     font-family: 'Georgia', 'Times New Roman', Times, 'serif';
-    color: #05888d;            /* Matches your color scheme */
+    
+}
+
+.donor a,.recipient a {
+    margin-bottom:0px;
+    color: #05888d;
+    text-decoration: none;            /* Matches your color scheme */
+}
+
+.donor a:hover, .recipient a:hover {
+    color: #024d50;
+}
+
+.quote {
+    text-align: center;
+    font-weight: bolder ;        /* Centers all text content */
+    margin: 10px auto;         /* Centers the sections horizontally and adds vertical spacing */
+    max-width: 800px;          /* Optional: limits section width */
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    font-size:x-large;
+    font-family: "Playwrite IN", serif;
+}
+
+.quote p {
+    margin-bottom:0px;
+    color: #013335;            /* Matches your color scheme */
 }
 
 
 
-.values h2 {
-    margin-bottom: 10px;
-    font-family: 'Georgia', 'Times New Roman', Times, 'serif';
-    color: #05888d;            /* Matches your color scheme */
-}
 
-.values p {
-    line-height: 1.6;
-    font-family: 'Georgia', 'Times New Roman', Times, 'serif';
-    margin-bottom: 15px;
-}
 
-.values ul {
-    list-style: none;
-    font-family: 'Georgia', 'Times New Roman', Times, 'serif';          /* Removes default bullet points */
-    padding: 0;                /* Removes default padding */
-}
 
-.values li {
-    margin: 10px 0;
-    font-family: 'Georgia', 'Times New Roman', Times, 'serif';
-    font-size: 1.1em;
-    color: #031414;
-}
+
+
 
 
 .footer {

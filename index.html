@@ -1,11 +1,14 @@
 <!DOCTYPE html>
+<html lang="en">
 <html>
 <head>
     <title>CareSync</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
 </head>
 
 <!-- This is for header -->
@@ -50,25 +53,40 @@
             </form>
             <div class="dashboard-menu">
                 <div class="menu_list">
-                    <h3>Blood Donor</h3>
-                    <p>Blood donor records and information</p>                                        <!-- This is for Dashboard Menu -->
-                </div>
+                    <a href="dashboard_menu/html/blooddonation.html">
+                        <h3>Blood Donor</h3>
+                        <p>Blood donor records and information</p> <!-- This is for Dashboard Menu -->
+                    </a>
+                </div>                
                 <div class="menu_list">
+                    <a href="dashboard_menu/html/doctor.html">
                     <h3>Doctors</h3>
                     <p>View and manage doctor schedules</p>
+                    </a>
                 </div>
                 <div class="menu_list">
+                    <a href="dashboard_menu/html/appointment.html">
                     <h3>Appointments</h3>
                     <p>Schedule and manage appointments</p>
+                    </a>
                 </div>
                 <div class="menu_list">
+                    <a href="dashboard_menu/html/report.html">
                     <h3>Reports</h3>
                     <p>Generate and view medical reports</p>
+                    </a>
                 </div>
-            </div>  
+            </div>
+        </div>  
 
     <footer class="footer">
-        <p>&copy; 2025 CareSync. All rights reserved.</p>                                                 <!-- This is for Footer -->
+        <a href="https://www.linkedin.com/in/abdullahalfahadayon" target="_blank">
+            <img src="images/linkedin.png" alt="LinkedIn" class="footer-icon">
+        </a>
+        <a href="https://github.com/fah-ayon" target="_blank">
+            <img src="images/github.png" alt="Github" class="footer-icon2">
+        </a>
+        <p>&copy; 2025 CareSync. All rights reserved.</p>
     </footer>
     
     

@@ -6,24 +6,15 @@
 
 /* This is for font */
 body {
-    font-family: 'Roboto', sans-serif;  /* This will apply the Roboto font to the body text */
+    font-family: "Roboto", serif;
     font-size: 13px;
 }
 
-h1{
-    font-family: 'Roboto', sans-serif;  /* This will apply PT Serif font to headers */
+h1, h2, h3 {
+    font-family: "Roboto", serif;
     font-size: 20px;
 }
 
-h2{
-    font-family: 'Roboto', sans-serif;  /* This will apply PT Serif font to headers */
-    font-size: 20px;
-}
-
-h3{
-    font-family: 'Roboto', sans-serif;  /* This will apply PT Serif font to headers */
-    font-size: 20px;
-}
 /* Upper code is for font */
 
 
@@ -110,7 +101,7 @@ h3{
     width: 480px;
     height: 480px;
     position: relative;
-    margin: 15% auto;
+    margin: 7% auto;
     background: #b5dadb;
     box-shadow: 0 4px 8px rgba(72, 107, 107, 0.432);
     padding: 5px
@@ -212,13 +203,27 @@ span{
 /* This is for dashboard menu */
 .dashboard-menu {
     width: 100%;
-    margin: 120% auto;
+    margin: 90% auto;
     padding: 10px;
     display: flex;              /* Changed to flex display */
     justify-content: center;    /* Center the cards */
     gap: 1.5rem;                 /* Space between cards */
     flex-wrap: nowrap;         /* Keep cards in single line */
 }
+
+
+
+/* to removes href syntex */
+
+.menu_list a {
+    color: black;         /* changes the text color from blue to black */
+    text-decoration: none;  /* removes the underline */
+}
+.menu_list a:hover {
+    color: #05888d;  /* changes the text color on hover */
+}
+
+
 
 .menu_list {
     background: #b5dadb;
@@ -252,7 +257,40 @@ span{
     background-color: #05888d;
     color: rgb(151, 211, 203);
     text-align: center;
+    padding: 0px 0;
+    display: flex;
+    justify-content: center; /* Changed to space-between */
+    align-items: center;
+    gap: 30px; /* Adjust spacing as needed */ 
 }
+
+.footer-icon {
+    width: 15px; /* Adjust size as needed */
+    height: 15px;
+    transition: transform 0.3s ease;
+    position: absolute;
+    left: 10px; /* Distance from the left edge */
+    top: 50%; /* Vertical center within the container */
+    transform: translateY(-50%); /* Center alignment */
+}
+
+.footer-icon2 {
+    width: 15px; /* Adjust size as needed */
+    height: 15px;
+    transition: transform 0.3s ease;
+    position: absolute;
+    left: 40px; /* Distance from the left edge */
+    top: 50%; /* Vertical center within the container */
+    transform: translateY(-50%); /* Center alignment */
+}
+
+/* Combined hover effect for both icons */
+.footer-icon:hover, 
+.footer-icon2:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+
 /* Upper code is for footer */
 
 

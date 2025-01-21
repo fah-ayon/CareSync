@@ -6,26 +6,17 @@
 
 /* This is for font */
 body {
-    font-family: 'Roboto', sans-serif;  /* This will apply the Roboto font to the body text */
+    font-family: "Roboto", serif;
     font-size: 13px;
     padding-top: 80px;
 
 }
 
-h1{
-    font-family: 'Roboto', sans-serif;  /* This will apply PT Serif font to headers */
+h1, h2, h3 {
+    font-family: "Roboto", serif;
     font-size: 20px;
 }
 
-h2{
-    font-family: 'Roboto', sans-serif;  /* This will apply PT Serif font to headers */
-    font-size: 20px;
-}
-
-h3{
-    font-family: 'Roboto', sans-serif;  /* This will apply PT Serif font to headers */
-    font-size: 20px;
-}
 /* Upper code is for font */
 
 
@@ -147,7 +138,7 @@ section {
 
 .values {
     text-align: center; /* Center all text content */
-    font-family: 'Georgia', 'Times New Roman', Times, 'serif';        /* Centers all text content */
+    font-family: "Roboto", serif;        /* Centers all text content */
     margin: 10px auto;         /* Centers the sections horizontally and adds vertical spacing */
     max-width: 800px;          /* Optional: limits section width */
     padding: 30px;
@@ -168,33 +159,43 @@ section {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* This is for footer */
 .footer {
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: #044244;
+    background-color: #05888d;
     color: rgb(151, 211, 203);
     text-align: center;
+    padding: 0px 0;
+    display: flex;
+    justify-content: center; /* Changed to space-between */
+    align-items: center;
+    gap: 30px; /* Adjust spacing as needed */ 
 }
-/* Upper code is for footer */
+
+.footer-icon {
+    width: 15px; /* Adjust size as needed */
+    height: 15px;
+    transition: transform 0.3s ease;
+    position: absolute;
+    left: 10px; /* Distance from the left edge */
+    top: 50%; /* Vertical center within the container */
+    transform: translateY(-50%); /* Center alignment */
+}
+
+.footer-icon2 {
+    width: 15px; /* Adjust size as needed */
+    height: 15px;
+    transition: transform 0.3s ease;
+    position: absolute;
+    left: 40px; /* Distance from the left edge */
+    top: 50%; /* Vertical center within the container */
+    transform: translateY(-50%); /* Center alignment */
+}
+
+/* Combined hover effect for both icons */
+.footer-icon:hover, 
+.footer-icon2:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+}
