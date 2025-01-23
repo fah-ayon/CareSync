@@ -83,7 +83,7 @@ h1, h2, h3 {
 .hero{
     height: 100%;
     width: 100%;
-    background-image: linear-gradient(rgba(253, 255, 255, 0.925), rgba(14, 170, 170, 0.4)), url(images/login_background.jpg);
+    background-image: linear-gradient(rgba(253, 255, 255, 0.925), rgba(14, 170, 170, 0.4)), url(/images/login_background.jpg);
     background-position: center;
     background-size: cover;
     position: absolute;
@@ -124,6 +124,9 @@ h1, h2, h3 {
 
 /* This is for toggle button */
 .toggle-btn{
+    font-family:sans-serif;
+    font-weight: bold;
+    color: #05888d;
     padding: 10px 30px;
     cursor: pointer;
     background: transparent;

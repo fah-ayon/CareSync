@@ -1,42 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
     <title>Administrative Login</title>
     <link rel="stylesheet" type="text/css" href="../css/admin.css">
-    <noscript><link rel="stylesheet" href="css/aboutus.css"></noscript>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
     </style>
 </head>
-
 <body>
     <div class="hero">
         <div class="form-box">
-            <div class ="button-box">
+            <div class="button-box">
                 <div id="btn"></div>
-                <button type="button" class="toggle-btn" onclick="login()">Login as Administrative</button>                    <!-- This is for Login and Sign Up -->
-                
+                <button type="button" class="toggle-btn" onclick="showAdminLogin()">Login as Administrative</button>
+                <button type="button" class="toggle-btn" onclick="showStaffLogin()">Login as Staff</button>
             </div>
-            <form id='login'class="input-group">
+            
+            <form id="loginA" class="input-group" style="left: 50px;">
                 <input type="text" class="input-field" placeholder="Username" required>
-                <input type="password" class="input-field" placeholder="Password" required>                     <!-- This is for Login -->
-                <input type="checkbox" class="check-box"><span>Forget Password</span>
+                <input type="password" class="input-field" placeholder="Password" required>
+                <div class="checkbox-container">
+                    <input type="checkbox" class="check-box" id="forgetAdmin">
+                    <span>Forget Password</span>
+                </div>
                 <button type="submit" class="submit-btn">Login</button>    
             </form>
-            </div>
-        </div>  
+            
+            <form id="loginS" class="input-group" style="left: 450px;">
+                <input type="text" class="input-field" placeholder="Username" required>
+                <input type="password" class="input-field" placeholder="Password" required>
+                <div class="checkbox-container">
+                    <input type="checkbox" class="check-box" id="forgetStaff">
+                    <span>Forget Password</span>
+                </div>
+                <button type="submit" class="submit-btn">Login</button>    
+            </form>
+        </div>
+    </div>  
 
-    <!-- This is for header -->
-      
     <header class="main-header">
         <div class="logo">
             <a href="../index.html" class="logo-link">
                 <img src="../images/logo.jpg" alt="CareSync Logo">
                 <span class="logo-text">CareSync</span>
             </a>
-                        
         </div>
         <nav class="nav-links">
             <a href="./contact.html">Contact Us</a>
@@ -44,13 +54,6 @@
             <a href="./admin.html">Administrative Login</a>
         </nav>
     </header>
-
-
-
-
-
-
-
 
     <footer class="footer">
         <a href="https://www.linkedin.com/in/abdullahalfahadayon" target="_blank">
@@ -61,5 +64,22 @@
         </a>
         <p>&copy; 2025 CareSync. All rights reserved.</p>
     </footer>
+
+    <script>                                                                  
+        var x = document.getElementById('loginA');
+        var y = document.getElementById('loginS');
+        var z = document.getElementById('btn');
+
+        function showStaffLogin(){
+            x.style.left = "-300px";
+            y.style.left = "220px";
+            z.style.left = "100px";
+        }
+        function showAdminLogin(){
+            x.style.left = "220px";
+            y.style.left = "700px";
+            z.style.left = "0";
+        }
+    </script>
 </body>
 </html>
