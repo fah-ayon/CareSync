@@ -268,7 +268,7 @@ INSERT INTO `patient` (`PatientID`, `Name`, `Email`, `PhoneNumber`, `Address`, `
 (8, 'Tariq Khan', 'tariq.khan@example.com', '5556667777', '505 Walnut St, Dhaka', 'AB-', '1991-08-05', 'password123'),
 (9, 'Rina Akter', 'rina.akter@example.com', '1122334455', '606 Ash St, Dhaka', 'O+', '1987-11-29', 'password123'),
 (10, 'Suman Roy', 'suman.roy@example.com', '6677889900', '707 Oakwood St, Dhaka', 'A+', '1990-02-17', 'password123'),
-(14, 'ayon', 'abdullahalfahad1999@gmail.com', NULL, NULL, NULL, NULL, 'sdFdFfsdf');
+
 
 -- --------------------------------------------------------
 
