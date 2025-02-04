@@ -19,9 +19,9 @@
                 <button type="button" class="toggle-btn" onclick="showStaffLogin()">Login as Staff</button>
             </div>
             
-            <form id="loginA" class="input-group" style="left: 50px;">
-                <input type="text" class="input-field" placeholder="Username" required>
-                <input type="password" class="input-field" placeholder="Password" required>
+            <form id="loginA" class="input-group" action="../Resources/adminlogin.php" method="POST" style="left: 50px;">
+                <input type="text" name="Email" class="input-field" placeholder="Email" required>
+                <input type="password" name="Password" class="input-field" placeholder="Password" required>  
                 <div class="checkbox-container">
                     <input type="checkbox" class="check-box" id="forgetAdmin">
                     <span>Forget Password</span>
@@ -29,9 +29,9 @@
                 <button type="submit" class="submit-btn">Login</button>    
             </form>
             
-            <form id="loginS" class="input-group" style="left: 450px;">
-                <input type="text" class="input-field" placeholder="Username" required>
-                <input type="password" class="input-field" placeholder="Password" required>
+            <form id="loginS" class="input-group" action="../Resources/stafflogin.php" method="POST" style="left: 450px;">
+                <input type="text" name="Email" class="input-field" placeholder="Email" required>
+                <input type="password" name="Password" class="input-field" placeholder="Password" required>  
                 <div class="checkbox-container">
                     <input type="checkbox" class="check-box" id="forgetStaff">
                     <span>Forget Password</span>

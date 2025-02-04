@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 23, 2025 at 06:59 PM
+-- Generation Time: Feb 04, 2025 at 01:50 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.0.30
 
@@ -39,8 +39,8 @@ CREATE TABLE `admin` (
 --
 
 INSERT INTO `admin` (`AdminID`, `Name`, `Email`, `Password`) VALUES
-(1, 'Main Admin', 'admin.main@gmail.com', 'adminpass123'),
-(2, 'Assistant Admin', 'admin.assistant@gmail.com', 'assistpass456');
+(1, 'Admin', 'admin.main@gmail.com', 'adminpass123'),
+(2, 'Admin', 'admin.assistant@gmail.com', 'assistpass456');
 
 -- --------------------------------------------------------
 
@@ -249,24 +249,26 @@ CREATE TABLE `patient` (
   `PhoneNumber` varchar(15) DEFAULT NULL,
   `Address` text DEFAULT NULL,
   `BloodGroup` varchar(10) DEFAULT NULL,
-  `DateOfBirth` date DEFAULT NULL
+  `DateOfBirth` date DEFAULT NULL,
+  `Password` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `patient`
 --
 
-INSERT INTO `patient` (`PatientID`, `Name`, `Email`, `PhoneNumber`, `Address`, `BloodGroup`, `DateOfBirth`) VALUES
-(1, 'John Doe', 'john.doe@example.com', '1234567890', '123 Main St, Dhaka', 'O+', '1990-01-01'),
-(2, 'Jane Smith', 'jane.smith@example.com', '0987654321', '456 Elm St, Dhaka', 'A+', '1985-05-15'),
-(3, 'Alex Rahman', 'alex.rahman@example.com', '1231231234', '789 Oak St, Dhaka', 'B-', '1992-11-20'),
-(4, 'Sara Ahmed', 'sara.ahmed@example.com', '9876543210', '101 Pine St, Dhaka', 'AB+', '1994-07-18'),
-(5, 'Moushumi Sultana', 'moushumi.sultana@example.com', '1029384756', '202 Maple St, Dhaka', 'O-', '1988-03-25'),
-(6, 'Rasel Hossain', 'rasel.hossain@example.com', '4567890123', '303 Birch St, Dhaka', 'A-', '1995-12-10'),
-(7, 'Fariha Begum', 'fariha.begum@example.com', '7896541230', '404 Cedar St, Dhaka', 'B+', '1993-06-14'),
-(8, 'Tariq Khan', 'tariq.khan@example.com', '5556667777', '505 Walnut St, Dhaka', 'AB-', '1991-08-05'),
-(9, 'Rina Akter', 'rina.akter@example.com', '1122334455', '606 Ash St, Dhaka', 'O+', '1987-11-29'),
-(10, 'Suman Roy', 'suman.roy@example.com', '6677889900', '707 Oakwood St, Dhaka', 'A+', '1990-02-17');
+INSERT INTO `patient` (`PatientID`, `Name`, `Email`, `PhoneNumber`, `Address`, `BloodGroup`, `DateOfBirth`, `Password`) VALUES
+(1, 'John Doe', 'john.doe@example.com', '1234567890', '123 Main St, Dhaka', 'O+', '1990-01-01', 'password123'),
+(2, 'Jane Smith', 'jane.smith@example.com', '0987654321', '456 Elm St, Dhaka', 'A+', '1985-05-15', 'password123'),
+(3, 'Alex Rahman', 'alex.rahman@example.com', '1231231234', '789 Oak St, Dhaka', 'B-', '1992-11-20', 'password123'),
+(4, 'Sara Ahmed', 'sara.ahmed@example.com', '9876543210', '101 Pine St, Dhaka', 'AB+', '1994-07-18', 'password123'),
+(5, 'Moushumi Sultana', 'moushumi.sultana@example.com', '1029384756', '202 Maple St, Dhaka', 'O-', '1988-03-25', 'password123'),
+(6, 'Rasel Hossain', 'rasel.hossain@example.com', '4567890123', '303 Birch St, Dhaka', 'A-', '1995-12-10', 'password123'),
+(7, 'Fariha Begum', 'fariha.begum@example.com', '7896541230', '404 Cedar St, Dhaka', 'B+', '1993-06-14', 'password123'),
+(8, 'Tariq Khan', 'tariq.khan@example.com', '5556667777', '505 Walnut St, Dhaka', 'AB-', '1991-08-05', 'password123'),
+(9, 'Rina Akter', 'rina.akter@example.com', '1122334455', '606 Ash St, Dhaka', 'O+', '1987-11-29', 'password123'),
+(10, 'Suman Roy', 'suman.roy@example.com', '6677889900', '707 Oakwood St, Dhaka', 'A+', '1990-02-17', 'password123'),
+(14, 'ayon', 'abdullahalfahad1999@gmail.com', NULL, NULL, NULL, NULL, 'sdFdFfsdf');
 
 -- --------------------------------------------------------
 
@@ -438,7 +440,7 @@ ALTER TABLE `equipment`
 -- AUTO_INCREMENT for table `patient`
 --
 ALTER TABLE `patient`
-  MODIFY `PatientID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `PatientID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
 -- AUTO_INCREMENT for table `staff`

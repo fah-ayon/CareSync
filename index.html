@@ -38,16 +38,16 @@
                 <button type="button" class="toggle-btn" onclick="login()">Login</button>                    <!-- This is for Login and Sign Up -->
                 <button type="button" class="toggle-btn" onclick="signup()">Sign Up</button>
             </div>
-            <form id='login'class="input-group">
-                <input type="text" class="input-field" placeholder="Username" required>
-                <input type="password" class="input-field" placeholder="Password" required>                     <!-- This is for Login -->
+            <form id='login' class="input-group" action="Resources/login.php" method="POST">     
+                <input type="text" name="Email" class="input-field" placeholder="Email" required>
+                <input type="password" name="Password" class="input-field" placeholder="Password" required>                     <!-- This is for Login -->
                 <input type="checkbox" class="check-box"><span>Forget Password</span>
                 <button type="submit" class="submit-btn">Login</button>    
             </form>
-            <form id='signup' class="input-group">
-                <input type="text" class="input-field" placeholder="Username" required>
-                <input type="email" class="input-field" placeholder="Email" required>
-                <input type="password" class="input-field" placeholder="Password" required>                     <!-- This is for Sign Up -->
+            <form id='signup' class="input-group" action="Resources/signup.php" method="POST">
+                <input type="text" name="Username" class="input-field" placeholder="Username" required>
+                <input type="email" name="Email" class="input-field" placeholder="Email" required>
+                <input type="password" name="Password" class="input-field" placeholder="Password" required>
                 <input type="checkbox" class="check-box"><span>Agree to the Terms and Conditions</span>
                 <button type="submit" class="submit-btn">Sign Up</button>    
             </form>
