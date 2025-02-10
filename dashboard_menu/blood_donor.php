@@ -3,7 +3,7 @@
 session_start();
 
 // Include the database connection
-require '../../Resources/db_connection.php'; // Make sure the path is correct
+require '../Resources/db_connection.php'; // Make sure the path is correct
 
 // Check if the form is submitted
 if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['submit'])) {

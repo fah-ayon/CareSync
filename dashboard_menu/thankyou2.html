@@ -1,0 +1,318 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Doctor Pannel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
+</head>
+
+
+<body>
+    <div class="hero">
+    </div>
+    <!-- This is for header -->
+      
+    <header class="main-header">
+        <div class="logo">
+            <a href="../index.html" class="logo-link">
+                <img src="../images/logo.jpg" alt="CareSync Logo">
+                <span class="logo-text">CareSync</span>
+            </a>
+                        
+        </div>
+
+        <nav class="nav-links">
+            <a href="../navbar_menu/contact.html">Contact Us</a>
+            <a href="../navbar_menu/aboutus.html">About Us</a>
+            <a href="../navbar_menu/admin.html">Administrative Login</a>
+        </nav>
+    </header>
+    
+    <div class="thank-you-container">
+        <h1>Thank You for Reaching Out!</h1>
+        <p>Your request for blood has been successfully submitted.</p>
+        <p>Our medical team is reviewing your request and will contact you as soon as possible.</p>
+        <p>We understand the urgency and are here to help. Please stay strong!</p>
+        <a href="../index.html" class="btn">Back to Home</a>
+    </div>
+
+
+
+
+
+    <footer class="footer">
+        <a href="https://www.linkedin.com/in/abdullahalfahadayon" target="_blank">
+            <img src="../images/linkedin.png" alt="LinkedIn" class="footer-icon">
+        </a>
+        <a href="https://github.com/fah-ayon" target="_blank">
+            <img src="../images/github.png" alt="Github" class="footer-icon2">
+        </a>
+        <p>&copy; 2025 CareSync. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
+
+
+<!-- CSS -->
+
+
+
+
+
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    /* This is for font */
+    body {
+        font-family: "Roboto", serif;
+        font-size: 13px;
+        padding-top: 80px;
+    
+    }
+    
+    h1, h2, h3 {
+        font-family: "Roboto", serif;
+        font-size: 20px;
+    }
+    
+    /* Upper code is for font */
+    
+    /* For background */
+    .hero{
+        height: 100%;
+        width: 100%;
+        background-image: linear-gradient(rgba(253, 255, 255, 0.925), rgba(14, 170, 170, 0.4)), url(../images/login_background.jpg);
+        background-position: center;
+        background-size: cover;
+        position: fixed;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        z-index: -1;
+    }
+    
+    
+    
+    
+    
+    /* This is for Header Styles */
+    .main-header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background: rgba(173, 236, 231, 0.95);
+        padding: 15px 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0 2px 5px rgba(5, 121, 111, 0.425);
+        z-index: 1000;
+    }
+    
+    
+    .thank-you-container {
+
+        text-align: center;
+        font-weight: bolder ;        /* Centers all text content */
+        margin: 10px auto;         /* Centers the sections horizontally and adds vertical spacing */
+        max-width: 800px;          /* Optional: limits section width */
+        padding: 30px;
+        background: rgba(255, 255, 255, 0.9);
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .thank-you-container h1 {
+        font-size: x-large;
+        margin-bottom:0px;
+        color: #013335;
+                    /* Matches your color scheme */
+    }
+
+
+
+    .thank-you-container p {
+        text-align: center;
+        font-weight: bolder ;        /* Centers all text content */
+        margin: 50px auto;         /* Centers the sections horizontally and adds vertical spacing */          /* Optional: limits section width */
+        padding: 0px;
+        background: rgba(255, 255, 255, 0.9);
+        font-size: medium;
+        font-family: 'Georgia', 'Times New Roman', Times, 'serif';
+        
+    }
+    
+    .thank-you-container a {
+        margin-bottom:0px;
+        color: #05888d;
+        text-decoration: none;            /* Matches your color scheme */
+    }
+    
+    .thank-you-container a:hover{
+        color: #024d50;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    .logo {
+        display: flex;
+        align-items: center;
+        gap: 10px; /* Ensure equal spacing between the logo image and text */
+    }
+    
+    .logo img {
+        height: 40px;
+        width: auto;
+    }
+    
+    .logo-link, .logo-text {
+        text-decoration: none; /* Removes underline from <a> */
+        font-family: 'PT Serif', serif;
+        font-size: 35px;
+        color: #05888d;
+        position: static;
+        margin: 0;
+        display: flex; /* Ensures consistent alignment */
+        align-items: center;
+    }
+    
+    
+    .nav-links {
+        display: flex;
+        gap: 0px;
+    }
+    
+    .nav-links a {
+        text-decoration: none;
+        color: #024d50;
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+        padding: 8px 15px;
+        border-radius: 20px;
+        transition: all 0.3s ease;
+    }
+    
+    .nav-links a:hover {
+        background: #b5dadb;
+        color: #05888d;
+    }
+    
+    /* Upper code is for Header Styles */
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    /* This is for Footer */
+    
+    
+    .footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: #05888d;
+        color: rgb(151, 211, 203);
+        text-align: center;
+        padding: 0px 0;
+        display: flex;
+        justify-content: center; /* Changed to space-between */
+        align-items: center;
+        gap: 30px; /* Adjust spacing as needed */ 
+    }
+    
+    .footer-icon {
+        width: 15px; /* Adjust size as needed */
+        height: 15px;
+        transition: transform 0.3s ease;
+        position: absolute;
+        left: 10px; /* Distance from the left edge */
+        top: 50%; /* Vertical center within the container */
+        transform: translateY(-50%); /* Center alignment */
+    }
+    
+    .footer-icon2 {
+        width: 15px; /* Adjust size as needed */
+        height: 15px;
+        transition: transform 0.3s ease;
+        position: absolute;
+        left: 40px; /* Distance from the left edge */
+        top: 50%; /* Vertical center within the container */
+        transform: translateY(-50%); /* Center alignment */
+    }
+    
+    /* Combined hover effect for both icons */
+    .footer-icon:hover, 
+    .footer-icon2:hover {
+        transform: scale(1.1); /* Slight zoom effect on hover */
+    }
+    
+    /* Upper code is for footer */
+    
+</style>

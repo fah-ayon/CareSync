@@ -83,7 +83,7 @@ h1, h2, h3 {
 .hero{
     height: 100%;
     width: 100%;
-    background-image: linear-gradient(rgba(253, 255, 255, 0.925), rgba(14, 170, 170, 0.4)), url(/images/login_background.jpg);
+    background-image: linear-gradient(rgba(253, 255, 255, 0.925), rgba(14, 170, 170, 0.4)), url(images/login_background.jpg);
     background-position: center;
     background-size: cover;
     position: absolute;
@@ -183,10 +183,12 @@ h1, h2, h3 {
 span{
     color: #777;
     font-size: 12px;
-    bottom: 68px;
+    bottom: 105px;
     position: absolute;
-    margin-left: 5px;
+    margin-left: 0px;
 }
+
+
 .submit-btn{
     width: 85%;
     padding: 10px 30px;

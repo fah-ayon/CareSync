@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 04, 2025 at 01:50 AM
+-- Generation Time: Feb 10, 2025 at 07:13 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.0.30
 
@@ -100,7 +100,27 @@ INSERT INTO `blood_donor` (`DonorID`, `Name`, `Email`, `PhoneNumber`, `Address`,
 (2, 'Lamia Khan', 'lamia.donor@gmail.com', '01810000002', 'Barishal, Bangladesh', 'O+'),
 (3, 'Kamal Hossain', 'kamal.donor@gmail.com', '01810000003', 'Rangpur, Bangladesh', 'B+'),
 (4, 'Sharmin Sultana', 'sharmin.donor@gmail.com', '01810000004', 'Sylhet, Bangladesh', 'AB-'),
-(5, 'Jamal Ahmed', 'jamal.donor@gmail.com', '01810000005', 'Mymensingh, Bangladesh', 'O-');
+(5, 'Jamal Ahmed', 'jamal.donor@gmail.com', '01810000005', 'Mymensingh, Bangladesh', 'O-'),
+(6, 'Rahima Begum', 'rahima.donor@gmail.com', '01810000006', 'Chittagong, Bangladesh', 'A+'),
+(7, 'Abdul Karim', 'abdul.donor@gmail.com', '01810000007', 'Khulna, Bangladesh', 'B-'),
+(8, 'Nasreen Akter', 'nasreen.donor@gmail.com', '01810000008', 'Rajshahi, Bangladesh', 'O+'),
+(9, 'Mahmud Hassan', 'mahmud.donor@gmail.com', '01810000009', 'Comilla, Bangladesh', 'AB+'),
+(10, 'Sabina Yasmin', 'sabina.donor@gmail.com', '01810000010', 'Narayanganj, Bangladesh', 'A-'),
+(11, 'Rafiq Islam', 'rafiq.donor@gmail.com', '01810000011', 'Gazipur, Bangladesh', 'B+'),
+(12, 'Fahima Khatun', 'fahima.donor@gmail.com', '01810000012', 'Sylhet, Bangladesh', 'O-'),
+(13, 'Mohsin Ali', 'mohsin.donor@gmail.com', '01810000013', 'Barisal, Bangladesh', 'AB-'),
+(14, 'Nargis Alam', 'nargis.donor@gmail.com', '01810000014', 'Rangpur, Bangladesh', 'A+'),
+(15, 'Habib Rahman', 'habib.donor@gmail.com', '01810000015', 'Dhaka, Bangladesh', 'B+'),
+(16, 'Farida Begum', 'farida.donor@gmail.com', '01810000016', 'Jessore, Bangladesh', 'O+'),
+(17, 'Rahim Miah', 'rahim.donor@gmail.com', '01810000017', 'Bogra, Bangladesh', 'AB+'),
+(18, 'Aisha Khan', 'aisha.donor@gmail.com', '01810000018', 'Kushtia, Bangladesh', 'A-'),
+(19, 'Kamal Uddin', 'kamal.u.donor@gmail.com', '01810000019', 'Tangail, Bangladesh', 'B-'),
+(20, 'Sultana Razia', 'sultana.donor@gmail.com', '01810000020', 'Feni, Bangladesh', 'O+'),
+(21, 'Imran Hossain', 'imran.donor@gmail.com', '01810000021', 'Pabna, Bangladesh', 'AB-'),
+(22, 'Nasima Akter', 'nasima.donor@gmail.com', '01810000022', 'Dinajpur, Bangladesh', 'A+'),
+(23, 'Azad Khan', 'azad.donor@gmail.com', '01810000023', 'Sirajganj, Bangladesh', 'B+'),
+(24, 'Runa Laila', 'runa.donor@gmail.com', '01810000024', 'Faridpur, Bangladesh', 'O-'),
+(25, 'Jahangir Alam', 'jahangir.donor@gmail.com', '01810000025', 'Noakhali, Bangladesh', 'AB+');
 
 -- --------------------------------------------------------
 
@@ -109,12 +129,13 @@ INSERT INTO `blood_donor` (`DonorID`, `Name`, `Email`, `PhoneNumber`, `Address`,
 --
 
 CREATE TABLE `blood_recipient` (
-  `RecipientID` int(11) NOT NULL,
-  `Name` varchar(255) NOT NULL,
-  `Email` varchar(255) NOT NULL,
-  `PhoneNumber` varchar(15) NOT NULL,
-  `Address` varchar(255) NOT NULL,
-  `BloodGroup` varchar(5) NOT NULL
+  `RecipientID` INT(11) NOT NULL AUTO_INCREMENT,
+  `Name` VARCHAR(255) NOT NULL,
+  `Email` VARCHAR(255) NOT NULL,
+  `PhoneNumber` VARCHAR(15) NOT NULL,
+  `Address` VARCHAR(255) NOT NULL,
+  `BloodGroup` VARCHAR(5) NOT NULL,
+  PRIMARY KEY (`RecipientID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
@@ -267,8 +288,7 @@ INSERT INTO `patient` (`PatientID`, `Name`, `Email`, `PhoneNumber`, `Address`, `
 (7, 'Fariha Begum', 'fariha.begum@example.com', '7896541230', '404 Cedar St, Dhaka', 'B+', '1993-06-14', 'password123'),
 (8, 'Tariq Khan', 'tariq.khan@example.com', '5556667777', '505 Walnut St, Dhaka', 'AB-', '1991-08-05', 'password123'),
 (9, 'Rina Akter', 'rina.akter@example.com', '1122334455', '606 Ash St, Dhaka', 'O+', '1987-11-29', 'password123'),
-(10, 'Suman Roy', 'suman.roy@example.com', '6677889900', '707 Oakwood St, Dhaka', 'A+', '1990-02-17', 'password123'),
-
+(10, 'Suman Roy', 'suman.roy@example.com', '6677889900', '707 Oakwood St, Dhaka', 'A+', '1990-02-17', 'password123');
 
 -- --------------------------------------------------------
 
@@ -422,7 +442,7 @@ ALTER TABLE `appointment`
 -- AUTO_INCREMENT for table `blood_donor`
 --
 ALTER TABLE `blood_donor`
-  MODIFY `DonorID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `DonorID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
 
 --
 -- AUTO_INCREMENT for table `blood_recipient`
