@@ -122,11 +122,7 @@ INSERT INTO `blood_donor` (`DonorID`, `Name`, `Email`, `PhoneNumber`, `Address`,
 (24, 'Runa Laila', 'runa.donor@gmail.com', '01810000024', 'Faridpur, Bangladesh', 'O-'),
 (25, 'Jahangir Alam', 'jahangir.donor@gmail.com', '01810000025', 'Noakhali, Bangladesh', 'AB+');
 
--- --------------------------------------------------------
 
---
--- Table structure for table `blood_recipient`
---
 
 CREATE TABLE `blood_recipient` (
   `RecipientID` INT(11) NOT NULL AUTO_INCREMENT,
@@ -138,9 +134,7 @@ CREATE TABLE `blood_recipient` (
   PRIMARY KEY (`RecipientID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
---
--- Dumping data for table `blood_recipient`
---
+
 
 INSERT INTO `blood_recipient` (`RecipientID`, `Name`, `Email`, `PhoneNumber`, `Address`, `BloodGroup`) VALUES
 (1, 'Md. Rahim', 'rahim.recipient@gmail.com', '01710000001', 'Dhaka, Bangladesh', 'A+'),
@@ -149,11 +143,7 @@ INSERT INTO `blood_recipient` (`RecipientID`, `Name`, `Email`, `PhoneNumber`, `A
 (4, 'Fatema Begum', 'fatema.recipient@gmail.com', '01710000004', 'Rajshahi, Bangladesh', 'AB-'),
 (5, 'Abul Hossain', 'abul.recipient@gmail.com', '01710000005', 'Khulna, Bangladesh', 'O-');
 
--- --------------------------------------------------------
 
---
--- Table structure for table `doctor`
---
 
 CREATE TABLE `doctor` (
   `ID` int(11) NOT NULL,

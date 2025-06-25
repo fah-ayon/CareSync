@@ -30,7 +30,14 @@
         </nav>
     </header>
     
-    
+    <section class="report-section">
+        <h2>Download Medical Report</h2>
+            <form action="download.php" method="GET">
+                <label for="report-id">Enter Report ID:</label>
+                <input type="text" id="report-id" name="report_id" placeholder="e.g. #000000" required>
+                <button type="submit">Download</button>
+            </form>
+    </section>
 
 
 
@@ -157,8 +164,61 @@
     /* Upper code is for Header Styles */
     
     
-    
-    
+    .report-section {
+    max-width: 500px;
+    margin: 120px auto;
+    padding: 30px;
+    background-color: #f0fbfb;
+    border: 1px solid #b3e0df;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    }
+
+    .report-section h2 {
+    color: #024d50;
+    margin-bottom: 20px;
+    }
+
+    .report-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    }
+
+    .report-section label {
+    font-weight: bold;
+    color: #036767;
+    font-size: 14px;
+    }
+
+    .report-section input {
+    padding: 10px;
+    width: 80%;
+    max-width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    }
+
+    .report-section button {
+    padding: 10px 25px;
+    background-color: #05888d;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s ease;
+    }
+
+    .report-section button:hover {
+    background-color: #04676b;
+    }
+
+        
     
     
     
